@@ -135,3 +135,16 @@ fn main() {
     }
 
 }
+
+
+#[cfg(test)]
+mod tests {
+    // Note this useful idiom: importing names from outer (for mod tests) scope.
+    use super::*;
+    
+    #[test]
+    fn test_format_value() {
+        assert_eq!(format_value(1.5), 1.5000);
+        assert_eq!(format_value(1.0), 1.0);
+    }
+}
