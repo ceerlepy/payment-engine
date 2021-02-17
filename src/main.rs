@@ -91,9 +91,9 @@ fn write_client_accounts(client_hashmap: &HashMap<String, ClientAccount>) -> Res
     for (_, client_account) in client_hashmap{
         print!("{},", client_account.client);
 
-        let available = formatted_value(client_account.available);
-        let held = formatted_value(client_account.held);
-        let total = formatted_value(client_account.total);
+        let available = format_value(client_account.available);
+        let held = format_value(client_account.held);
+        let total = format_value(client_account.total);
 
         println!("{},", client_account.locked);
 
@@ -109,7 +109,7 @@ fn write_client_accounts(client_hashmap: &HashMap<String, ClientAccount>) -> Res
     Ok(())
 }
 
-fn formatted_value(value: f64) -> f64{
+fn format_value(value: f64) -> f64{
     if value.fract() != 0.0 {
         print!("{:.4},", value);
         format!("{:.4}", value).parse::<f64>().unwrap()
