@@ -1,6 +1,6 @@
 # Payment Engine
 
-Project is created by usinf `cargo new` 
+Project is created by using `cargo new` 
 
 |                |Command                          |Alternatives                                 |
 |----------------|---------------------------------|---------------------------------------------|
