@@ -13,25 +13,25 @@ Project is created by using `cargo new`
 
 
 **ALL OPERATIONS ARE SUPPORTED**__
-- Deposit__
-- Withdrawal__
-- Dispute__
-- Resolve__
-- Chargeback__
+- Deposit <br />
+- Withdrawal <br />
+- Dispute <br />
+- Resolve <br />
+- Chargeback <br />
 
-**input file format** (already added to code)__
-type,client,tx,amount__
-deposit,1,1,1.0__
-deposit,2,2,2.0__
-deposit,1,3,2.0__
-withdrawal,1,4,1.5__
-withdrawal,2,5,3.0__
-dispute,2,2,__
-chargeback,2,2,__
-dispute,2,1,__
-resolve,2,1,__
+**input file format** (already added to code) <br />
+type,client,tx,amount <br />
+deposit,1,1,1.0 <br />
+deposit,2,2,2.0 <br />
+deposit,1,3,2.0 <br />
+withdrawal,1,4,1.5 <br />
+withdrawal,2,5,3.0 <br />
+dispute,2,2, <br />
+chargeback,2,2, <br />
+dispute,2,1, <br />
+resolve,2,1, <br />
 
-**outputfile format** (already added to code)__
-client,available,held,total,locked__
-1,1.5,0.0,1.5,false__
-2,0.0,0.0,0.0,true__
+**outputfile format** (already added to code) <br />
+client,available,held,total,locked <br />
+1,1.5,0.0,1.5,false <br />
+2,0.0,0.0,0.0,true <br />
